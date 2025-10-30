@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Jacquard+24&family=Jacquarda+Bastarda+9&family=Silkscreen:wght@400;700&display=swap');
+</style>
+
+
+
+
+<head>
+  <title> ame 220 github</title>
+  <style>
+    :root {
+      --white: #efefef;
+      --black: #2f323a;
+      --purple: #BA86D1;
+      --quantity: 10;
+    }
+
+
+    /* Start layout */
+    /* rotating images with model foreground tutoral: https://www.youtube.com/watch?v=yqaLSlPOUxM */
+
+    body {
+      background-color: var(--white);
+      opacity: 0.8;
+      background-image: radial-gradient(#e2cbff .75px, #ffffff 0.5px);
+      background-size: 10px 10px;
+      /* credits: https://www.magicpattern.design/tools/css-backgrounds */
+      margin: 10px;
+      padding: 5px;
+    }
+
+    .banner {
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .banner .slider{
+      position: absolute;
+      width: 154px;
+      height: 215px;
+      top: 10%;
+      left: calc(50% - 100px);
+      transform-style: preserve-3d;
+      transform: perspective(2000px);
+      animation: autoRun 20s linear infinite;
+    }
+
+    @keyframes autoRun{
+      from{
+        transform: perspective(2000px) rotateX(10deg) rotateY(0deg);
+      }to{
+        transform: perspective(2000px) rotate(10deg) rotateY(360deg);
+      }
+    }
+
+    .banner .slider #item{
+      position: absolute;
+      inset: 0 0 0 0;
+      transform: 
+      rotatey(calc( (var(--position) - 1) * (360/var(--quantity)) * 1deg))
+      translateZ(350px);
+    }
+
+    .banner .slider .item img{
+      width: 154px;
+      height: 215px;
+      object-fit: cover;
+    }
+
+    .banner .content{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(100vh, 100vw);
+      height: max-content;
+      padding-bottom: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .banner .content h1{
+      font-family: "Jacquard 24";
+      font-size: 5em;
+      text-align: left;
+      color: var(--purple);
+      max-width: 150px;
+      position: relative;
+    }
+
+    .banner .content h2 {
+      font-family: "Jacquarda Bastarda 9";
+      color: var(--purple);
+      font-size: 1em;
+      text-align: right;
+      max-width: 200px;
+    }
+
+      .banner .content .castorice{
+      background-image: url(castorice.png);
+      width: 100%;
+      height: 105vh;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-size: auto 130%;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+
+    .banner .content p {
+      font-family: "Silkscreen";
+
+    }
+
+
+  </style>
+</head>
+
+
+<body>
+
+  <div class="banner">
+    
+    <div class="slider">
+    <div id="item" style="--position: 1"><img src="aglaea.png" alt="image of aglaea from honkai star rail"></div>
+    <div id="item" style="--position: 2"><img src="hyacine.png" alt="image of hyacine from honkai star rail"></div>
+    <div id="item" style="--position: 3"><img src="hysilens.png" alt="image of hysilens from honkai star rail"></div>
+    <div id="item" style="--position: 4"><img src="cerydra.png" alt="image of cerydra from honkai star rail"></div>
+    <div id="item" style="--position: 5"><img src="tribbie.png" alt="image of tribbie from honkai star rail"></div>
+    <div id="item" style="--position: 6"><img src="cipher.png" alt="image of cipher from honkai star rail"></div>
+    </div>
+
+    <div class="content" >
+      <div id="chinese">  
+      <h1>遐蝶</h1>
+      </div>
+      <div id="casto">
+        <h2>Castorice</h2>
+        <p> Chrysos Heirs</p>
+      </div>
+      <div class="castorice">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="second">
+    <div class="death">
+      <p>fjdds</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
