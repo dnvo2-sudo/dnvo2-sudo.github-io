@@ -16,7 +16,7 @@
       --black: #2f323a;
       --purple: #BA86D1;
       --quantity: 6;
-        }
+    }
 
 
     /* Start layout */
@@ -31,7 +31,14 @@
       padding: 10px;
       border-style: solid;
       border-color: var(--purple);
-        }
+    }
+
+
+    @media (max-width: 768px) {
+      body {
+        display: block;
+      }
+    }
 
     nav ul {
       list-style: none;
@@ -57,7 +64,7 @@
       color: var(--black);
     }
 
-      /* rotating images with model foreground tutoral: https://www.youtube.com/watch?v=yqaLSlPOUxM */
+    /* rotating images with model foreground code basing on tutoral: https://www.youtube.com/watch?v=yqaLSlPOUxM */
 
     .banner {
       width: 100%;
@@ -175,7 +182,6 @@
     #item2 {
       width: 100%;
       display: flex;
-      justify-content: center;
       align-items: center;
     }
 
@@ -185,23 +191,18 @@
       object-fit: cover;
     }
 
-    /* gallery view code https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+    /* gallery photo view code based on https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
     .column {
       float: left;
       width: 16.66%;
-      padding: 10px;
+      padding-left: 60px;
       box-sizing: border-box;
+      justify-content: center;
       text-align: center;
     }
 
     .column img:hover {
       transform: scale(1.5);
-    }
-
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
     }
 
     .third {
@@ -213,11 +214,11 @@
     }
 
     .left {
-      flex: 0 0 60%;
+      flex: 60%;
     }
 
     .right {
-      flex: 0 0 40%;
+      flex: 40%;
     }
 
     .third .left h1 {
@@ -245,8 +246,6 @@
     .third .right #item3 {
       text-align: right;
       scale: 65%;
-      margin-top: -10px;
-      margin-bottom: -10px;
     }
 
     .fourth {
@@ -258,19 +257,16 @@
     }
 
     .left2 {
-      flex: 0 0 40%;
+      flex: 40%;
     }
 
     .right2 {
-      flex: 0 0 60%;
+      flex: 60%;
     }
 
     .fourth .left2 #item4 {
       text-align: left;
       scale: 65%;
-      margin-top: -10px;
-      margin-bottom: -10px;
-
     }
 
     .fourth .right2 h1 {
@@ -278,7 +274,7 @@
       font-size: 45px;
       color: var(--purple);
       text-align: right;
-      margin-bottom: 0.2em;
+      margin-bottom: 0;
       margin-right: 65px;
 
 
@@ -296,11 +292,12 @@
     }
 
     .fourth .right2 p {
-      text-align: right;
-      margin-right: 65px;
       font-family: "Silkscreen";
       font-size: 13px;
       color: var(--black);
+      text-align: right;
+      margin-right: 65px;
+
     }
   </style>
 </head>
@@ -311,7 +308,7 @@
     <ul>
       <li><a href="#banner">Home</a></li>
       <li><a href="#second">Heirs</a></li>
-      <li><a href="#fourth">Castorice</a></li>
+      <li><a href="#fourth">About</a></li>
 
     </ul>
   </nav>
@@ -369,7 +366,8 @@
       <p>The land that reveres death, Aidonia, where snow falls endlessly, has today drifted into a sweet slumber.
         Castorice, daughter of the River of Souls, Chrysos Heir in search of "Death" Coreflame, sets forth. You must
         guard the lament of souls and embrace the solitude of destiny. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud
         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
     </div>
     <div class="right">
@@ -385,9 +383,11 @@
       <h1>33550337</h1>
       <h2>The cycle repeats once more...</h2>
       <p>It is said that as Kephale's divine radiance dimmed, they offered their own Coreflame and left behind the
-        Oracle of Creation. Afterward, heroes imbued with great power began to walk the earth. They carried in their veins golden divine
-        blood and were known as the "Chrysos Heirs." Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        Oracle of Creation. Afterward, heroes imbued with great power began to walk the earth. They carried in their
+        veins golden divine
+        blood and were known as the "Chrysos Heirs." Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris
         nisi ut aliquip ex ea commodo consequat. </p>
     </div>
   </div>
