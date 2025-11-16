@@ -32,6 +32,8 @@ body {
     margin: 24px;
     width: 65vw; 
     font-size: 2rem; 
+
+    transition: all 0.4s ease;
 }
 
 
@@ -59,6 +61,7 @@ nav {
     width: 25vw; 
     height: 100vh; 
     font-size: 3rem; 
+
 }
 
 
@@ -87,10 +90,12 @@ nav > ul  {
     border-radius: 50%;
     display: block;
     z-index: 10; 
+    
 }
 
 nav {
     z-index: 9;
+    transition: all 0.4s ease;
 }
 
 #menu > span { 
@@ -281,9 +286,26 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter*/
         position: fixed; 
         top: 0px; 
         left: 0px;
-        height: 36px;
+        height: 100vh;
         width: 100vw;
+        direction: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         z-index: 1;
+    }
+
+    .navStyle {
+        display: flex;
+    }
+
+    #menu {
+        display: block;
+        position: fixed;
+
+        top: 20px;
+        left: 20px;
+        z-index: 2;
     }
 
     nav > #menu  {
@@ -296,7 +318,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter*/
         left: 0px;
         padding: 36px; 
         margin: 0px;
-        width: 60%;
+        width: 100%;
         font-size: 2rem; 
     }
     
@@ -309,7 +331,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter*/
         display: flex; 
         margin: 0 auto; /* this was the culprit!!! <-- check your margins when you're trying to do anything! */ 
         gap: 20px; /* here is where I think the sound cuts off?*/ 
-
         padding: 0px; 
         text-align: center;
         font-size: 3rem;
@@ -319,6 +340,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter*/
         list-style-type: none;
         justify-content: center;    /* I also added some quality of life stuff like making it centered on top!*/ 
         align-items: center; 
+        flex-direction: column;
     
     }
 
