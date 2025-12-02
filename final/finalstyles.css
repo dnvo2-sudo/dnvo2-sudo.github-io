@@ -1,0 +1,31 @@
+.second {
+    position: relative;
+    z-index: 2;
+    padding-top: 20px;
+}
+
+#item {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#item img {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+}
+
+.column {
+    float: left;
+    padding-left: 100px;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+}
+
+#item2 img {
+    width: 50%;
+    height: auto;
+    align-items: center;
+}
