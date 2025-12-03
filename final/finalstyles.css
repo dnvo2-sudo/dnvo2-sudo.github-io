@@ -1,3 +1,51 @@
+@import url(); 
+
+:root {
+    --white: #FFFFFF;
+    --red: #A93226;
+    --black: #000000;
+}
+
+body {
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+nav {
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 1vw;
+}
+
+nav ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: var(--red);
+}
+
+#menu {
+    position: fixed;
+    top: 0px;
+    left: calc(20vw/2);
+    transform: scale(0.5, 0.5);
+    max-height: 50px;
+    max-width: 100px;
+    z-index: 10;
+}
+
+
 .second {
     position: relative;
     z-index: 2;
@@ -24,8 +72,48 @@
     text-align: center;
 }
 
-#item2 img {
-    width: 50%;
-    height: auto;
-    align-items: center;
+.third #item2 {
+    transform: scale(0.25);
+}
+
+/* sumire starts here */
+
+.fourth {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 25px;
+    clear: both;
+    max-width: 100%;
+    overflow-x: hidden;
+        }
+
+
+.left2 {
+    flex: 1;
+    min-width: 0;
+    text-align: left; 
+}
+
+.right2 {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 15px;
+    overflow-wrap: break-word;
+    text-align: left; 
+}
+
+    .fourth .right2 p {
+      font-size: 13px;
+      color: var(--black);
+      text-align: right;
+      margin-right: 65px;
+
+    }
+
+
+.fourth .left2 #item4 {
+    text-align: left;
+    transform: scale(0.25); 
+    transform-origin: top left; 
 }
