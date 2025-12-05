@@ -1,4 +1,7 @@
-@import url(); 
+@font-face {
+    font-family: "p5hatty";
+    src: url("") format("woff2");
+}
 
 :root {
     --white: #FFFFFF;
@@ -45,31 +48,43 @@ nav ul li a:hover {
     z-index: 10;
 }
 
+#one {
+    text-align: center;
+}
+
+#one p {
+    text-align: center;
+}
 
 .second {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     z-index: 2;
     padding-top: 20px;
+    flex-wrap: wrap;
 }
+
+.column {
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+}
+
 
 #item {
     width: 50%;
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 #item img {
-    width: 120px;
+    width: 200px;
     height: auto;
     object-fit: cover;
-}
-
-.column {
-    float: left;
-    padding-left: 100px;
-    box-sizing: border-box;
-    justify-content: center;
-    text-align: center;
 }
 
 .third #item2 {
