@@ -1,4 +1,5 @@
-// used this: https://stackoverflow.com/questions/32540044/display-current-date-in-dd-mm-yyyy-format and https://stackoverflow.com/questions/30634949/how-to-display-date-using-javascript
+// used this: https://stackoverflow.com/questions/32540044/display-current-date-in-dd-mm-yyyy-format and https://stackoverflow.com/questions/30634949/how-to-display-date-using-javascript and https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
