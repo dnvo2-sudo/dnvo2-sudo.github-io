@@ -29,6 +29,6 @@ function hideBar() {
 const menu = document.getElementById("menu");
 const navBar = document.getElementsByClassName("navStyle")[0];
 
-menu.addEventListener("click", () => {
+menu.addEventListener("click", function() {
     navBar.classList.toggle("hidden");
 });
