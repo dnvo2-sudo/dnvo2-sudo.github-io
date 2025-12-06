@@ -29,6 +29,7 @@ function hideBar() {
 const menu = document.getElementById("menu");
 const navBar = document.getElementsByClassName("navStyle")[0];
 
+// DOM tutorial https://www.w3schools.com/jsref/met_element_addeventlistener.asp
 menu.addEventListener("click", function() {
     navBar.classList.toggle("hidden");
 });
